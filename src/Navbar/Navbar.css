@@ -1,0 +1,35 @@
+header {
+    padding: 2em 5em;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+nav span {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    gap: 1em;
+}
+
+ul li {
+    list-style: none;
+
+}
+
+li a {
+    text-decoration: none;
+    color: var(--black-color);
+    transition: color 0.3s ease;
+    font-weight: 500;
+}
+
+li a:hover {
+    color: #781075
+}

@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --outfit: "Outfit", sans-serif;
+    --white-color: #fff;
+    --black-color: #000;
+}
+
+body 
+{
+    font-family: var(--outfit);
+}
