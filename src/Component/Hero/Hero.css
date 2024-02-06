@@ -1,0 +1,51 @@
+.hero-section{
+    margin: 2.5em 0;
+}
+.hero-image-container{
+    width: 100%;
+    margin: 1em 0 2em 0;
+    text-align: center;
+}
+
+.hero-image-container img {
+    width: 14em;
+    aspect-ratio: 1 / 1 ;
+}
+
+.hero-text-container *{
+    text-align: center;
+    margin: 10px 0;
+}
+
+.hero-text-container .hero-title-txt {
+    font-weight: bold;
+}
+
+.hero-text-container .hero-post {
+    font-size: 1.12rem;
+    font-weight: 500;
+}
+
+.hero-text-container .hero-description-txt {
+    font-size: 1.12rem;
+    font-weight: 500;
+}
+
+
+.call-to-action {
+    text-align: center;
+}
+
+.call-to-action button {
+    padding: 1em 2em;
+    margin: 2em 0;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--main-color);
+    color: var(--secondary-color);
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+

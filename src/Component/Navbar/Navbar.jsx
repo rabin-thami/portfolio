@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import './Navbar.css'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 function Navbar() {
 
@@ -16,7 +15,7 @@ function Navbar() {
                     <p>Rabin</p>
                 </div>
                 <div className='menu-icon'onClick={handelShowNavBar}>
-                    <i className="fa-solid fa-bars"></i>
+                    <i className={`fa-solid ${showNavbar ? "fa-xmark" : "fa-bars"}`}></i>
                 </div>
                 <div className={`nav-elements ${showNavbar && "active"}`} >
                     <ul>

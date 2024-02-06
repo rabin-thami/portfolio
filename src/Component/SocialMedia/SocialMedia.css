@@ -1,0 +1,19 @@
+.social-media-section ul {
+    display: flex;
+    list-style-type: none;
+    gap: 2.18em;
+    position: absolute;
+    bottom: 2em;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.social-media-section ul li {
+    font-size: 2rem;
+
+}
+
+.social-media-section ul li a {
+    color: var(--main-color);
+}
