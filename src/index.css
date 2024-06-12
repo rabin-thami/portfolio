@@ -1,19 +1,8 @@
-*{
-    margin: 0;
-    padding: 0;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-:root {
-    --font: "poppins", sans-serif;
-    --primary-color : #181526;
-    --seconday-color : #FFF;
-    --main-color : #6B58D8;
-}
-
-body 
-{
-    font-family: var(--font);
-    background-color: var(--primary-color);
-    color: var(--seconday-color);
-    padding: 1em 2em;
+body {
+  background-color: #000;
+  color: #fff;
 }
