@@ -3,12 +3,12 @@ export default function Hero() {
   return (
     <section className="background-grid">
       <div className="rabin relative">
-        <div className="flex justify-center items-center h-3/4">
+        <div className="flex justify-center items-center h-3/2">
           <div className=" relative">
             <img
               src={ProfileImage}
               alt="Profile Image"
-              className="w-[20em] rounded-t-full border-4"
+              className="w-[25em] rounded-t-full border-4"
             />
             <div
               className="absolute inset-0"
