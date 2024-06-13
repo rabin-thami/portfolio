@@ -1,14 +1,10 @@
 import Navbar from "./Navbar";
-import HeroSection from "./Hero";
-import Technology from "./Technology";
-export default function DesktopComponents() {
+import HeroSection from "./HeroSection";
+export default function index() {
   return (
-    <section className="container mx-auto my-2">
+    <main className="container w-screen mx-auto">
       <Navbar />
-      <section className="container max-w-5xl mx-auto">
-        <HeroSection />
-        <Technology />
-      </section>
-    </section>
+      <HeroSection />
+    </main>
   );
 }

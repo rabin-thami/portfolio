@@ -1,33 +1,49 @@
 export default function Navbar() {
   return (
-    <nav className="flex justify-between py-5 items-center">
-      <div className="flex gap-1 font-bold text-xl">
-        <p className="font">Rabin</p>
-        <div className="flex items-baseline">
-          <p>Thami</p>
-          <p className="w-1 h-1 bg-[#DBF52F] rounded-full mx-1"></p>
-        </div>
+    <nav className="p-5 flex justify-between items-center">
+      <div className="font-bold text-2xl">
+        Rabin Thami<span className="text-[#DBF52F]">.</span>
       </div>
       <div>
-        <ul className="font-semibold flex items-center gap-5">
-          <li className="flex gap-1 hover:cursor-pointer transition-all duration-150">
+        <ul className="flex gap-5 font-medium items-center justify-center">
+          <li className="flex gap-1">
             <span className="text-[#DBF52F]">01.</span>
-            <p className="hover:text-[#DBF52F]">About</p>
+            <a
+              href=""
+              className="hover:text-[#DBF52F] transition-all duration-150"
+            >
+              About me
+            </a>
           </li>
-          <li className="flex gap-1 hover:cursor-pointer transition-all duration-150">
+          <li className="flex gap-1">
             <span className="text-[#DBF52F]">02.</span>
-            <p className="hover:text-[#DBF52F]">Experience</p>
+            <a
+              href=""
+              className="hover:text-[#DBF52F] transition-all duration-150"
+            >
+              Experience
+            </a>
           </li>
-          <li className="flex gap-1 hover:cursor-pointer transition-all duration-150">
+          <li className="flex gap-1">
             <span className="text-[#DBF52F]">03.</span>
-            <p className="hover:text-[#DBF52F]">Work</p>
+            <a
+              href=""
+              className="hover:text-[#DBF52F] transition-all duration-150"
+            >
+              Work
+            </a>
           </li>
-          <li className="flex gap-1 hover:cursor-pointer transition-all duration-150">
+          <li className="flex gap-1">
             <span className="text-[#DBF52F]">04.</span>
-            <p className="hover:text-[#DBF52F]">Contact</p>
+            <a
+              href=""
+              className="hover:text-[#DBF52F] transition-all duration-150"
+            >
+              Contact
+            </a>
           </li>
-          <li>
-            <button className="border border-[#DBF52F] px-4 py-2 rounded-sm hover:bg-[#DBF52F] hover:text-black transition-all duration-200">
+          <li className="flex gap-1">
+            <button className="px-6 py-2 border border-[#DBF52F] rounded-sm hover:bg-[#DBF52F] hover:text-black font-medium transition-all duration-150">
               Resume
             </button>
           </li>
