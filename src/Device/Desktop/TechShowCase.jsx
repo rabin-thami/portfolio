@@ -22,17 +22,19 @@ export default function Showcase() {
   ];
 
   return (
-    <section className="container mx-auto max-w-3xl p-5 flex flex-col justify-between items-center">
-      <h1 className="font-medium text-5xl">Tech I used</h1>
-      <div className="flex w-full flex-wrap gap-5 py-10">
-        {icons.map(({ IconComponent, name }, index) => (
-          <div
-            key={index}
-            className="w-40 h-40 isolate bg-white/5 shadow-lg ring-1 ring-gray-50/10 rounded-md backdrop-blur-md  transition-all duration-300 hover:-translate-y-2 flex items-center justify-center"
-          >
-            <IconComponent size={70} />
-          </div>
-        ))}
+    <section className="container mx-auto max-w-3xl flex flex-col">
+      <div>
+        <h1 className="font-bold text-4xl">Tech I used</h1>
+        <div className="flex w-full flex-wrap gap-5 py-10">
+          {icons.map(({ IconComponent, name }, index) => (
+            <div
+              key={index}
+              className="w-40 h-40 isolate bg-white/5 shadow-lg ring-1 ring-gray-50/10 rounded-md backdrop-blur-md  transition-all duration-300 hover:-translate-y-2 flex items-center justify-center"
+            >
+              <IconComponent size={70} />
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );
