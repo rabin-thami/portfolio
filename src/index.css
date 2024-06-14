@@ -15,7 +15,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: calc(100vh - 10em);
+  height: calc(100vh - 5em);
   text-align: center;
   background-image: linear-gradient(
       90deg,
@@ -30,9 +30,17 @@ body {
   background: radial-gradient(
     ellipse at center,
     rgba(255, 255, 255, 0.01) 25%,
-    rgba(0, 0, 0, 1) 75%
+    rgba(0, 0, 0, 1) 60%
   );
   z-index: 1;
   width: 100%;
   height: 100%;
+}
+
+/* .showcase-pattern {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='100%' height='100%' preserveAspectRatio='none' viewBox='0 0 100% 100%'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1176%26quot%3b)' fill='none'%3e%3cpath d='M -713.3981202619373%2c422 C -593.4%2c375.8 -353.4%2c197 -113.39812026193724%2c191 C 126.6%2c185 246.6%2c414.2 486.60187973806273%2c392 C 726.6%2c369.8 846.6%2c75.6 1086.6018797380627%2c80 C 1326.6%2c84.4 1446.6%2c412.6 1686.6018797380627%2c414 C 1926.6%2c415.4 2143.92%2c107.2 2286.601879738063%2c87 C 2429.28%2c66.8 2377.32%2c267.8 100%%2c313' stroke='rgba(219%2c 245%2c 47%2c 1)' stroke-width='15'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1176'%3e%3crect width='100%' height='100%' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+} */
+
+.showcase-pattern {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='100%' height='100%' preserveAspectRatio='none' viewBox='0 0 100% 100%'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1003%26quot%3b)' fill='none'%3e%3cpath d='M -688.2188852204329%2c89 C -568.22%2c146.2 -328.22%2c347 -88.21888522043282%2c375 C 151.78%2c403 271.78%2c224.8 511.7811147795672%2c229 C 751.78%2c233.2 871.78%2c417.2 1111.7811147795671%2c396 C 1351.78%2c374.8 1471.78%2c142 1711.7811147795671%2c123 C 1951.78%2c104 2174.14%2c284.8 2311.7811147795674%2c301 C 2449.42%2c317.2 2382.36%2c223.4 100%%2c204' stroke='rgba(219%2c 245%2c 47%2c 1)' stroke-width='10'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1003'%3e%3crect width='100%' height='100%' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
 }
