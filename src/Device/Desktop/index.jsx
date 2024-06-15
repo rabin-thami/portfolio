@@ -1,6 +1,8 @@
 import Navbar from "./Navbar";
 import HeroSection from "./HeroSection";
-import Showcase from "./Showcase";
+import TechShowCase from "./TechShowCase";
+import ProjectShowCase from "./ProjectShowCase";
+
 export default function index() {
   return (
     <>
@@ -8,8 +10,11 @@ export default function index() {
         <Navbar />
         <HeroSection />
       </section>
-      <section className="showcase-pattern py-10">
-        <Showcase />
+      <section className="showcase-pattern">
+        <TechShowCase />
+      </section>
+      <section className="container w-screen mx-auto">
+        <ProjectShowCase />
       </section>
     </>
   );
