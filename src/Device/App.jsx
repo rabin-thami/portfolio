@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import DesktopComponents from "./Device/Desktop";
+import DesktopComponents from "./Desktop";
 //getting the screen size of current window
 const getScreenCategory = (width) => {
   if (width >= 1024) {
@@ -13,7 +13,7 @@ const getScreenCategory = (width) => {
 
 export default function App() {
   const [screenCategory, setScreenCategory] = useState(
-    getScreenCategory(window.innerWidth)
+    getScreenCategory(window.innerWidth),
   );
 
   useEffect(() => {
@@ -29,22 +29,17 @@ export default function App() {
     return () => window.removeEventListener("resize", handleResize);
   }, [screenCategory]);
 
+  console.log(screenCategory);
   return (
     <div className="font-SpaceGrotesk">
       {screenCategory === "desktop" && <DesktopComponents />}
-
       {screenCategory === "tablet" && (
         <div>
           {/* Tablet-specific content */}
-          <h2 className=" text-center text-lg">Tablet Content</h2>
+          <h2 className="text-center text-lg">Tablet Content</h2>
         </div>
       )}
-      {screenCategory === "mobile" && (
-        <div>
-          {/* Tablet-specific content */}
-          <h2 className=" text-center text-lg">Mobile Content</h2>
-        </div>
-      )}
+      {screenCategory === "mobile" && <h1>Mobile Content</h1>}
     </div>
   );
 }

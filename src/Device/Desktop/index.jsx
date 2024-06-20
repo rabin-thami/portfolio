@@ -1,21 +1,10 @@
-import Navbar from "./Navbar";
+import Header from "./Header";
 import HeroSection from "./HeroSection";
-import TechShowCase from "./TechShowCase";
-import ProjectShowCase from "./ProjectShowCase";
-
-export default function index() {
+export default function DesktopComponents() {
   return (
     <>
-      <section className="container w-screen mx-auto">
-        <Navbar />
-        <HeroSection />
-      </section>
-      <section className="showcase-pattern">
-        <TechShowCase />
-      </section>
-      <section className="container w-screen mx-auto">
-        <ProjectShowCase />
-      </section>
+      <Header />
+      <HeroSection />
     </>
   );
 }
