@@ -16,18 +16,18 @@ export default function () {
             </li>
             <li>
               <span className="text-yellow">02.</span>
-              <span> Experiences</span>
-            </li>
-            <li>
-              <span className="text-yellow">03.</span>
               <span> Work</span>
             </li>
             <li>
-              <span className="text-yellow">04.</span>
+              <span className="text-yellow">03.</span>
               <span> Contact</span>
             </li>
             <li>
-              <button className="bg-yellow border-yellow rounded-sm border px-5 py-2 text-black transition-all duration-150 hover:bg-black hover:text-white">
+              <span className="text-yellow">04.</span>
+              <span> Blog</span>
+            </li>
+            <li>
+              <button className="rounded-sm border border-yellow bg-yellow px-5 py-3 text-black transition-all duration-150 hover:bg-black hover:text-white">
                 Resume
               </button>
             </li>
