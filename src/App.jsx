@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
-import DesktopComponents from "./desktop";
+import DesktopComponents from "./device/desktop";
+import "./index.css";
 //getting the screen size of current window
 const getScreenCategory = (width) => {
   if (width >= 1024) {
