@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 body {
   background-color: #000;
   color: #fff;
@@ -35,8 +40,21 @@ body {
     @apply w-full;
   }
 
-  .hover--effect span {
+  .hover--effect > * {
     @apply relative;
     z-index: 2;
+  }
+
+  .glass--effect {
+    @apply isolate bg-white/10 shadow-md ring-1 ring-white/10 backdrop-blur-md backdrop-filter;
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
   }
 }
