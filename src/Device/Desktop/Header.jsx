@@ -1,3 +1,4 @@
+import resumePDF from "../../assets/Static/resume.pdf";
 export default function () {
   return (
     <header className="container mx-auto">
@@ -16,20 +17,18 @@ export default function () {
             </li>
             <li>
               <span className="text-yellow">02.</span>
-              <span> Experiences</span>
-            </li>
-            <li>
-              <span className="text-yellow">03.</span>
               <span> Work</span>
             </li>
             <li>
-              <span className="text-yellow">04.</span>
+              <span className="text-yellow">03.</span>
               <span> Contact</span>
             </li>
             <li>
-              <button className="bg-yellow border-yellow rounded-sm border px-5 py-2 text-black transition-all duration-150 hover:bg-black hover:text-white">
-                Resume
-              </button>
+              <a href={resumePDF} download="rabin-resume" target="_blank">
+                <button className="rounded-sm border border-yellow bg-yellow px-5 py-3 text-black transition-all duration-150 hover:bg-black hover:text-white">
+                  Resume
+                </button>
+              </a>
             </li>
           </ul>
         </div>
