@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import DesktopComponent from "@/device/desktop";
+import DesktopComponent from "./device/desktop";
 import "./index.css";
 //getting the screen size of current window
 const getScreenCategory = (width) => {
