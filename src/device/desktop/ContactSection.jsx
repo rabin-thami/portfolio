@@ -10,7 +10,10 @@ export default function WorkShowcase() {
 
   return (
     <section className="overflow-hidden">
-      <div className="container mx-auto h-screen w-full max-w-5xl content-center">
+      <div
+        className="container mx-auto h-screen w-full max-w-5xl content-center"
+        id="contact"
+      >
         {/* Title Section */}
         <div className="left-0 flex w-screen items-center gap-5">
           <h2 className="text-2xl">

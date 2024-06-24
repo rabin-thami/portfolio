@@ -7,7 +7,10 @@ import {
 } from "react-icons/ri";
 export default function Aboutme() {
   return (
-    <section className="container mx-auto h-screen max-w-5xl overflow-hidden">
+    <section
+      className="container mx-auto h-screen max-w-5xl overflow-hidden"
+      id="about"
+    >
       <div className="relative flex h-screen w-full flex-col items-center justify-center">
         {/* Title */}
         <div>

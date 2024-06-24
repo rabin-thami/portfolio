@@ -1,7 +1,7 @@
 import profileImage from "/image/profile.webp";
 export default function HeroSection() {
   return (
-    <section className="container mx-auto h-screen max-w-5xl">
+    <section className="container mx-auto h-screen max-w-5xl py-14" id="home">
       <div className="magicpattern mt-10 flex flex-col items-center">
         {/* Image Container */}
         <div className="relative flex items-center justify-center overflow-hidden">
