@@ -4,7 +4,7 @@ export default function HeroSection() {
     <section className="container mx-auto h-screen max-w-5xl py-14" id="home">
       <div className="magicpattern mt-10 flex flex-col items-center">
         {/* Image Container */}
-        <div className="relative flex items-center justify-center overflow-hidden">
+        <div className="relative flex items-center justify-center overflow-hidden w-[calc(100vw-30em)]">
           <img
             src={profileImage}
             alt="Hero Image"
