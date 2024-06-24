@@ -4,11 +4,11 @@ export default function HeroSection() {
     <section className="container mx-auto h-screen max-w-5xl py-14" id="home">
       <div className="magicpattern mt-10 flex flex-col items-center">
         {/* Image Container */}
-        <div className="relative flex items-center justify-center overflow-hidden w-[calc(100vw-30em)]">
+        <div className="relative flex w-[calc(100vw-30em)] items-center justify-center overflow-hidden">
           <img
             src={profileImage}
             alt="Hero Image"
-            className="w-1/4 rounded-t-full border-4"
+            className="w-3/12 rounded-t-full border-4"
           />
           <div
             className="absolute inset-0"
