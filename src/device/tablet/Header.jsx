@@ -31,7 +31,7 @@ const Navbar = () => {
         show ? "translate-y-0" : "-translate-y-full"
       }`}
     >
-      <div className="container mx-auto">
+      <div className="container mx-auto max-w-2xl">
         <nav className="flex items-center justify-between py-5">
           {/* Your existing nav content here */}
           <div className="text-xl font-semibold">

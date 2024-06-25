@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import DesktopComponents from "./device/desktop";
+import TabletComponents from "./device/tablet";
 import "./index.css";
 //getting the screen size of current window
 const getScreenCategory = (width) => {
@@ -34,12 +35,7 @@ export default function App() {
   return (
     <div className="font-SpaceGrotesk">
       {screenCategory === "desktop" && <DesktopComponents />}
-      {screenCategory === "tablet" && (
-        <div>
-          {/* Tablet-specific content */}
-          <h2 className="text-center text-lg">Tablet Content</h2>
-        </div>
-      )}
+      {screenCategory === "tablet" && <TabletComponents />}
       {screenCategory === "mobile" && <h1>Mobile Content</h1>}
     </div>
   );

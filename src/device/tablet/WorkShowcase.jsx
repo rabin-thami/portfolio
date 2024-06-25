@@ -10,7 +10,7 @@ export default function WorkShowcase() {
 
   return (
     <section className="magicline overflow-hidden">
-      <div className="container mx-auto h-screen w-full max-w-5xl content-start pt-[calc(100vh-85vh)]">
+      <div className="container mx-auto h-screen w-full max-w-2xl content-start pt-[calc(100vh-85vh)]">
         {/* Title Section */}
         <div className="left-0 flex w-screen items-center gap-5">
           <h2 className="text-2xl">
@@ -37,7 +37,7 @@ export default function WorkShowcase() {
           </div>
           {/* Right Container */}
           <div className="no-scrollbar h-auto max-h-[calc(100vh-12em)] w-full overflow-y-scroll py-2">
-            <ul className="grid grid-cols-3 gap-3">
+            <ul className="grid grid-cols-2 gap-3">
               {selectedLanguage.projects.map((project, index) => (
                 <a href={project.visitLink} key={index}>
                   <li className="glass--effect group h-fit w-full rounded-md px-3 py-5 duration-300 hover:-translate-y-0.5 hover:cursor-pointer">

@@ -7,7 +7,7 @@ import {
 } from "react-icons/ri";
 export default function Aboutme() {
   return (
-    <section className="container mx-auto h-screen max-w-5xl overflow-hidden">
+    <section className="container mx-auto h-screen max-w-2xl overflow-hidden">
       <div className="relative flex h-screen w-full flex-col items-center justify-center">
         {/* Title */}
         <div>
@@ -31,7 +31,7 @@ export default function Aboutme() {
             <p className="py-5">
               Here are a few technologies I’ve been working with recently:
             </p>
-            <ul className="list-yellow grid list-inside list-disc grid-cols-2 marker:text-yellow">
+            <ul className="list-yellow grid list-inside list-disc grid-cols-2 text-sm marker:text-yellow">
               <li className="">JavaScript (ES6+)</li>
               <li className="">React</li>
               <li className="">Next JS</li>
@@ -42,7 +42,7 @@ export default function Aboutme() {
           </div>
           <div className="h-auto w-full">
             <h3 className="pb-5 text-xl font-bold">Stay in Touch with Me</h3>
-            <ul className="grid list-inside grid-cols-3 items-end gap-5">
+            <ul className="grid list-inside grid-cols-2 items-end gap-5">
               <li className="place-items-top group flex gap-2 hover:cursor-pointer">
                 <RiLinkedinBoxFill
                   size={25}

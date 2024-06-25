@@ -2,8 +2,8 @@ import Header from "./Header";
 import HeroSection from "./HeroSection";
 import Aboutme from "./Aboutme";
 import WorkShowcase from "./WorkShowcase";
-import ContactSection from "./ContactSection";
-export default function DesktopComponents() {
+import Contact from "./Contact";
+export default function TabletComponents() {
   return (
     <div className="">
       <Header />
@@ -17,7 +17,7 @@ export default function DesktopComponents() {
         <WorkShowcase />
       </div>
       <div id="contact">
-        <ContactSection />
+        <Contact />
       </div>
     </div>
   );
