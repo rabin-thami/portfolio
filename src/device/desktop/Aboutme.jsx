@@ -69,7 +69,7 @@ export default function Aboutme() {
                   size={25}
                   className="transition-all duration-200 group-hover:text-[#E4405F]"
                 />
-                <p className="text-lg font-semibold">Twitter / X</p>
+                <p className="text-lg font-semibold">Instagram</p>
               </li>
 
               <li className="place-items-top group flex gap-2 hover:cursor-pointer">

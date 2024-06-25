@@ -7,11 +7,11 @@ import {
 } from "react-icons/ri";
 export default function Aboutme() {
   return (
-    <section className="container mx-auto h-screen max-w-2xl overflow-hidden">
-      <div className="relative flex h-screen w-full flex-col items-center justify-center">
+    <section className="container mx-auto max-w-[80vw] overflow-hidden">
+      <div className="flex h-screen w-fit flex-col items-center justify-center">
         {/* Title */}
         <div>
-          <div className="absolute left-0 flex w-screen items-center gap-5">
+          <div className="left-0 flex w-screen items-center gap-5 py-2">
             <h2 className="text-2xl">
               <span className="text-yellow">01. </span>
               <span className="font-bold">About Me</span>
@@ -20,7 +20,7 @@ export default function Aboutme() {
           </div>
         </div>
         {/* About me Text */}
-        <div className="flex w-full justify-between gap-24 py-10">
+        <div className="flex w-full flex-col justify-between gap-1">
           <div className="h-auto w-full text-lg">
             <p className="text-pretty">
               Hello! My name is Rabin Thami and I enjoy creating things that
@@ -31,7 +31,7 @@ export default function Aboutme() {
             <p className="py-5">
               Here are a few technologies I’ve been working with recently:
             </p>
-            <ul className="list-yellow grid list-inside list-disc grid-cols-2 text-sm marker:text-yellow">
+            <ul className="list-yellow grid list-inside list-disc grid-cols-2 text-base marker:text-yellow">
               <li className="">JavaScript (ES6+)</li>
               <li className="">React</li>
               <li className="">Next JS</li>
@@ -40,44 +40,45 @@ export default function Aboutme() {
               <li className="">Node JS</li>
             </ul>
           </div>
-          <div className="h-auto w-full">
-            <h3 className="pb-5 text-xl font-bold">Stay in Touch with Me</h3>
-            <ul className="grid list-inside grid-cols-2 items-end gap-5">
-              <li className="place-items-top group flex gap-2 hover:cursor-pointer">
+
+          <div className="h-auto w-screen py-5">
+            <h3 className="pb-5 text-lg font-bold">Stay in Touch with Me</h3>
+            <ul className="grid grid-cols-2 items-end gap-3">
+              <li className="place-items-top group flex gap-1 hover:cursor-pointer">
                 <RiLinkedinBoxFill
-                  size={25}
+                  size={20}
                   className="transition-all duration-200 group-hover:text-[#0077B5]"
                 />
-                <p className="text-lg font-semibold">Linkedin</p>
+                <p className="text-base font-medium">Linkedin</p>
               </li>
-              <li className="place-items-top group flex gap-2 hover:cursor-pointer">
+              <li className="place-items-top group flex gap-1 hover:cursor-pointer">
                 <RiGithubFill
-                  size={25}
+                  size={20}
                   className="transition-all duration-200 group-hover:text-[#E6EDF3]"
                 />
-                <p className="text-lg font-semibold">Github</p>
+                <p className="text-base font-medium">Github</p>
               </li>
-              <li className="place-items-top group flex gap-2 hover:cursor-pointer">
+              <li className="place-items-top group flex gap-1 hover:cursor-pointer">
                 <RiTwitterXFill
-                  size={25}
+                  size={20}
                   className="transition-all duration-200 group-hover:text-[#1DA1F2]"
                 />
-                <p className="text-lg font-semibold">Twitter / X</p>
+                <p className="text-base font-medium">Twitter / X</p>
               </li>
-              <li className="place-items-top group flex gap-2 hover:cursor-pointer">
+              <li className="place-items-top group flex gap-1 hover:cursor-pointer">
                 <RiInstagramFill
-                  size={25}
+                  size={20}
                   className="transition-all duration-200 group-hover:text-[#E4405F]"
                 />
-                <p className="text-lg font-semibold">Instagram</p>
+                <p className="text-base font-medium">Instagram</p>
               </li>
 
-              <li className="place-items-top group flex gap-2 hover:cursor-pointer">
+              <li className="place-items-top group flex gap-1 hover:cursor-pointer">
                 <RiFacebookBoxFill
-                  size={25}
+                  size={20}
                   className="transition-all duration-200 group-hover:text-[#316FF6]"
                 />
-                <p className="text-lg font-semibold">Facebook</p>
+                <p className="text-base font-medium">Facebook</p>
               </li>
             </ul>
           </div>
