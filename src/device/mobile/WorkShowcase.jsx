@@ -62,6 +62,7 @@ export default function WorkShowcase() {
                                 <a
                                   href={project.githubLink}
                                   className="transition-all duration-300 hover:cursor-pointer hover:text-yellow"
+                                  target="_blank"
                                 >
                                   {project.githubLink && (
                                     <RiGithubLine size={20} />
@@ -70,6 +71,7 @@ export default function WorkShowcase() {
                                 <a
                                   href={project.visitLink}
                                   className="transition-all duration-300 hover:cursor-pointer hover:text-yellow"
+                                  target="_blank"
                                 >
                                   {project.visitLink && (
                                     <RiShareBoxLine size={20} />

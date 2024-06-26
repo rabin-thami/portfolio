@@ -24,7 +24,7 @@ export default function HeroSection() {
             <h1>Hey, I'm Rabin Thami.</h1>
             <h1>Web Developer</h1>
           </div>
-          <div className="py-4 text-center">
+          <div className="px-12 py-8 text-center">
             <p className="text-base">
               I've been working as a{" "}
               <span className="underline--effect font-semibold">
