@@ -40,7 +40,7 @@ export default function WorkShowcase() {
             <ul className="grid grid-cols-3 gap-3">
               {selectedLanguage.projects.map((project, index) => (
                 <a href={project.visitLink} key={index}>
-                  <li className="glass--effect group h-fit w-full rounded-md px-3 py-5 duration-300 hover:-translate-y-0.5 hover:cursor-pointer">
+                  <li className="glass--effect group h-auto min-h-[17em] w-full rounded-md px-3 py-5 duration-300 hover:-translate-y-0.5 hover:cursor-pointer">
                     {/* top-section of project holder */}
                     <div className="flex items-center justify-between">
                       {selectedLanguage.iconName && (
