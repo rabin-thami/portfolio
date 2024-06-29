@@ -15,7 +15,7 @@ export default function WorkShowcase() {
   };
 
   return (
-    <section className="magicline overflow-hidden">
+    <section className="magicline overflow-hidden" id="work">
       <div className="container mx-auto h-screen max-w-[80vw] content-start pt-[calc(100vh-85vh)]">
         {/* Title Section */}
         <div className="left-0 flex w-screen items-center gap-5">

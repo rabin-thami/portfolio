@@ -1,39 +1,35 @@
-import React, { useState, useEffect, useCallback } from "react";
+import React, { useState, useEffect } from "react";
 import resumePDF from "../../assets/Static/resume.pdf";
 
 const Navbar = () => {
-  const [show, setShow] = useState(true);
-  const [lastScrollY, setLastScrollY] = useState(0);
-
-  const controlNavbar = useCallback(() => {
-    if (typeof window !== "undefined") {
-      if (window.scrollY > lastScrollY) {
-        setShow(false);
-      } else {
-        setShow(true);
-      }
-      setLastScrollY(window.scrollY);
-    }
-  }, [lastScrollY]);
+  const [activeSection, setActiveSection] = useState("");
 
   useEffect(() => {
-    if (typeof window !== "undefined") {
-      window.addEventListener("scroll", controlNavbar);
-      return () => {
-        window.removeEventListener("scroll", controlNavbar);
-      };
-    }
-  }, [controlNavbar]);
+    const handleScroll = () => {
+      const sections = document.querySelectorAll("section");
+      const scrollPosition = window.scrollY + 200;
+      sections.forEach((section) => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.offsetHeight;
+        if (
+          scrollPosition >= sectionTop &&
+          scrollPosition < sectionTop + sectionHeight
+        ) {
+          setActiveSection(section.id);
+        }
+      });
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
-    <header
-      className={`fixed left-0 top-0 z-20 w-full backdrop-blur-xl transition-transform duration-300 ${
-        show ? "translate-y-0" : "-translate-y-full"
-      }`}
-    >
+    <header className="fixed left-0 top-0 z-20 w-full backdrop-blur-xl">
       <div className="container mx-auto">
         <nav className="flex items-center justify-between py-5">
-          {/* Your existing nav content here */}
           <div className="text-xl font-semibold">
             <a href="#home">
               <span>Rabin Thami</span>
@@ -42,39 +38,36 @@ const Navbar = () => {
           </div>
           <div className="font-medium">
             <ul className="flex items-center gap-5">
-              <li>
+              <li
+                className={activeSection === "about-me" ? "active-navbar" : ""}
+              >
                 <a href="#about-me">
                   <span className="text-yellow">01.</span>
                   <span className="cursor-pointer transition-all duration-150 hover:text-yellow">
-                    {" "}
                     About
                   </span>
                 </a>
               </li>
-              <li>
+              <li className={activeSection === "work" ? "active-navbar" : ""}>
                 <a href="#work">
                   <span className="text-yellow">02.</span>
                   <span className="cursor-pointer transition-all duration-150 hover:text-yellow">
-                    {" "}
                     Work
                   </span>
                 </a>
               </li>
-              <li>
+              <li
+                className={activeSection === "contact" ? "active-navbar" : ""}
+              >
                 <a href="#contact">
-                  <span className="text-yellow">03. </span>
+                  <span className="text-yellow">03.</span>
                   <span className="cursor-pointer transition-all duration-150 hover:text-yellow">
                     Contact
                   </span>
                 </a>
               </li>
               <li>
-                <a
-                  href={resumePDF}
-                  download="rabin-resume"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                <a href={resumePDF} target="_blank">
                   <button className="rounded-sm border border-yellow bg-yellow px-5 py-2 text-black transition-all duration-150 hover:bg-black hover:text-white">
                     Resume
                   </button>
