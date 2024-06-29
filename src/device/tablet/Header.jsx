@@ -70,12 +70,7 @@ const Navbar = () => {
                 </a>
               </li>
               <li>
-                <a
-                  href={resumePDF}
-                  download="rabin-resume"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                <a href={resumePDF} target="_blank">
                   <button className="rounded-sm border border-yellow bg-yellow px-5 py-2 text-black transition-all duration-150 hover:bg-black hover:text-white">
                     Resume
                   </button>
