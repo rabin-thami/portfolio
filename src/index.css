@@ -62,4 +62,8 @@ body {
     -ms-overflow-style: none;
     scrollbar-width: none;
   }
+
+  .active-navbar {
+    color: #dbf52f;
+  }
 }

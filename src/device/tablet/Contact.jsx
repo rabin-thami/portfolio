@@ -3,7 +3,7 @@ import projectData from "../../utils/projectData.js";
 import { RiGithubLine, RiShareBoxLine } from "react-icons/ri";
 export default function WorkShowcase() {
   return (
-    <section className="relative overflow-hidden">
+    <section className="relative overflow-hidden" id="contact">
       <div className="container mx-auto h-screen w-full max-w-2xl content-center">
         {/* Title Section */}
         <div className="left-0 flex w-screen items-center gap-5">
