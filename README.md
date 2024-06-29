@@ -1,3 +1,4 @@
+![screenshot](screenshots.png)
 # Portfolio App
 
 This is the app develop in React using Tailwind and Vite
