@@ -5,11 +5,9 @@ import "./globals.css";
 
 const space_grotesk = Space_Grotesk({
   variable: "--font-space_grotesk",
-  weight: ["300", "400", "500", "600", "700", ],
+  weight: ["300", "400", "500", "600", "700"],
   subsets: ["latin"],
 });
-
-
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -24,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${space_grotesk.variable} antialiased max-w-6xl mx-auto`}
+        className={`${space_grotesk.variable} antialiased max-w-6xl mx-auto px-3`}
       >
         <Navbar />
         {children}
