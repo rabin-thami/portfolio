@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${space_grotesk.variable} antialiased max-w-6xl mx-auto px-3`}
+        className={`${space_grotesk.variable} antialiased max-w-6xl mx-auto px-3 pt-20`}
       >
         <Navbar />
         {children}
