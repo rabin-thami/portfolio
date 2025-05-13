@@ -3,14 +3,14 @@ import Image from "next/image";
 export default function HeroSection() {
   return (
     <div
-      className="relative flex flex-col items-center justify-center min-h-[calc(100vh-20rem)] md:min-h-[calc(100vh-8rem)] overflow-hidden bg-black text-white"
+      className="relative flex flex-col items-center justify-center min-h-[calc(100vh-55rem)] md:min-h-[calc(100vh-8rem)] overflow-hidden bg-black text-white"
       id="home"
     >
       {/* Grid Background */}
       <div className="absolute w-full h-full inset-0 bg-grid z-0" />
 
       {/* Faux Glow Behind Image */}
-      <div className="absolute z-10 h-[400px] w-[400px] rounded-full bg-white/10 blur-2xl" />
+      <div className="md:absolute z-10 md:h-[400px] md:w-[400px] md:rounded-full md:bg-white/10 blur-2xl" />
 
       {/* Overlay Gradient */}
       <div className="absolute inset-0 z-10 bg-gradient-to-t from-black via-black/250 to-transparent" />
@@ -29,10 +29,10 @@ export default function HeroSection() {
 
       {/* Text */}
       <div className="-mt-10 md:-mt-20 relative z-20 text-center space-y-2">
-        <h1 className="text-4xl md:text-6xl font-bold leading-tight tracking-tight">
+        <h1 className="text-3xl md:text-6xl font-bold leading-tight tracking-tight">
           Hey, I'm Rabin Thami.
         </h1>
-        <h2 className="text-3xl md:text-4xl font-bold leading-tight tracking-tight">
+        <h2 className="text-2xl md:text-4xl font-bold leading-tight tracking-tight">
           Full-stack Developer
         </h2>
         <p className=" text-lg md:text-xl  max-w-4xl">
