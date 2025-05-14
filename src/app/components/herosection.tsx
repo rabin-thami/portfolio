@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function HeroSection() {
   return (
     <div
-      className="relative flex flex-col items-center justify-center min-h-[calc(100vh-55rem)] md:min-h-[calc(100vh-8rem)] overflow-hidden bg-black text-white"
+      className="relative flex flex-col items-center justify-center min-h-[calc(100vh-55rem)] md:min-h-[calc(100vh-3rem)] overflow-hidden bg-black text-white"
       id="home"
     >
       {/* Grid Background */}

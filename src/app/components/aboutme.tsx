@@ -10,7 +10,7 @@ export default function AboutMe() {
         <div>
           <div className="absolute left-0 flex w-full items-center gap-5">
             <h2 className="text-2xl w-fit font-bold">
-              <span className="text-primary ">01. </span>
+              <span className="text-primary ">02. </span>
               <span>About Me</span>
             </h2>
             <hr className="h-[2px] w-1/6 border-none bg-primary" />

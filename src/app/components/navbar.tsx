@@ -8,8 +8,8 @@ export default function navbar() {
   const navbarList = [
     { name: "Home", link: "#home" },
     { name: "About", link: "#about" },
-    { name: "Projects", link: "#project" },
-    { name: "Blog", link: "#" },
+    { name: "Projects", link: "#projects" },
+    { name: "Blog", link: "#blog" },
     { name: "Contact", link: "#" },
   ];
 
