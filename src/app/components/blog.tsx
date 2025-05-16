@@ -10,7 +10,8 @@ import { blogPosts } from "@/app/data/blogPost";
 
 export default function Blog() {
   const post = blogPosts.slice(0, 2);
-  return (    <div className="relative w-full">
+  return (
+    <div className="relative w-full">
       <div className="magic-line absolute inset-0" />
       <div
         className="mt-14 md:min-h-screen md:mt-10 py-5 max-w-6xl mx-auto px-3 flex"

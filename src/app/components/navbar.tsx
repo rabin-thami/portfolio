@@ -10,7 +10,7 @@ export default function navbar() {
     { name: "About", link: "#about" },
     { name: "Projects", link: "#projects" },
     { name: "Blog", link: "#blog" },
-    { name: "Contact", link: "#" },
+    { name: "Contact", link: "#contact" },
   ];
 
   const handleToggle = () => {
