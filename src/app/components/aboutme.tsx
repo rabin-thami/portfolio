@@ -2,7 +2,7 @@ import { Github, Linkedin, Twitter } from "lucide-react";
 export default function AboutMe() {
   return (
     <div
-      className="mt-14 md:min-h-screen md:mt-20 py-5 max-w-6xl flex"
+      className="mt-14 md:min-h-screen md:mt-20 py-5  flex max-w-6xl mx-auto"
       id="about"
     >
       <div className="relative flex md:h-screen w-full flex-col items-center justify-center">

@@ -11,7 +11,7 @@ const technologies = [
 export default function Project() {
   return (
     <div
-      className="mt-14 md:min-h-screen md:mt-10 py-5 max-w-6xl flex"
+      className="mt-14 md:min-h-screen md:mt-10 py-5 max-w-6xl mx-auto flex"
       id="projects"
     >
       <div className="relative flex md:h-screen w-full flex-col items-center justify-center">
