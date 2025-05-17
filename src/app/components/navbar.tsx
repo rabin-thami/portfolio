@@ -6,11 +6,12 @@ import { AlignLeft, X } from "lucide-react";
 export default function navbar() {
   const [isToggle, setIsToggle] = useState<boolean>(false);
   const navbarList = [
-    { name: "Home", link: "#home" },
-    { name: "About", link: "#about" },
-    { name: "Projects", link: "#projects" },
-    { name: "Blog", link: "#blog" },
-    { name: "Contact", link: "#contact" },
+    { name: "Home", link: "/" },
+    { name: "About", link: "/#about" },
+    { name: "Projects", link: "/#projects" },
+    { name: "Blog", link: "/#blog" },
+    { name: "Contact", link: "/#contact" },
+    { name: "Login", link: "/sign-in" },
   ];
 
   const handleToggle = () => {
